@@ -16,8 +16,6 @@
 ->Mantemos no escopo do arquivo do css algo fixo, e inline algo q vamos alterar com js nas variaveis;
 
 #Dia - 02
-->yarn dev;
-
 ->Utilizar o Next.js, onde o mesmo substitui o create react-app
 ->Next usa muinto SPA, SSA, SSG
     ->SPA - Uma aplicação de uma unica pagina, quando mudamos o conteudo mas ficamos na mesma pagina não precisando de um novo recarregamento;
@@ -30,6 +28,17 @@ Criar o projeto em next:
     ->yarn create next-app "nome do projeto";
 Estartar o projeto:
     ->yarn dev;
+
+->Trabalhando na operação Countdown:
+    ->Usamos a funcionalidade Math.floor() para arredondamento;
+    ->Usamos a funcionalidade .padStart(), onde passamos uma quantidade de caracteres para verificar se
+    não tiver preenchemos com um caracter escolhido;
+    ->Usamos a funcionalidade .split() para separar os valores num array de um unico valor;
+    ->No js usamos o [], para destruturar um array assim podeno colocar seus novos indices;
+    ->importamos o useEffect que é uma funcionalidade do react onde dispara efeitos colaterais,
+    quando algo acontecer ou algo mudar deve acontecer algo, o mesmo recebe dois parametro, a primeira,
+    sempre sera uma função, o segundo parametro quando mudar;
+    ->Criamos para o countdown, um loop entre as propriedades, para cada um segundo a menos a funcionalidade do useEffect se inicia de novo;
 
 #Dia - 03
 
