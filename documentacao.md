@@ -64,7 +64,9 @@ Estartar o projeto:
 
 
 #Dia - 04
-
+    ->Estruturas de contexto sempre segue a mesma estrura usada inicialmente;
+    ->Não copiamos certos dados, pois alguns segue uma regra para vizualização e nao como a aplicação funciona;
+    ->Mantemos na _app componentes que avo se repetir por toda a aplicação;
 
 #Dia - 05
 

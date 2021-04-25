@@ -7,7 +7,7 @@ export function ChallengeBox(){
     /* const contextData = useContext(ChallengesContext); */
     /* console.log(contextData); */
 
-    const {activeChallenge, resetChallenge} = useContext(ChallengesContext);
+    const {activeChallenge, resetChallenge, completeChallenge} = useContext(ChallengesContext);
 
     const hasActiveChallenge = true;
 
@@ -38,7 +38,9 @@ export function ChallengeBox(){
 
                        <button 
                        type="button"
-                       className={styles.challengeSucceededButton}>
+                       className={styles.challengeSucceededButton}
+                       onClick={completeChallenge}>
+                           
                            Completei
                         </button>
                    </footer>
