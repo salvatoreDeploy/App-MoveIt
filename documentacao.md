@@ -67,6 +67,8 @@ Estartar o projeto:
     ->Estruturas de contexto sempre segue a mesma estrura usada inicialmente;
     ->Não copiamos certos dados, pois alguns segue uma regra para vizualização e nao como a aplicação funciona;
     ->Mantemos na _app componentes que avo se repetir por toda a aplicação;
+    ->Um dos uso do useEffect é que quando se passa um array vazio dentro da estrura, ele vai executar a função uma unica vez quando o componente for mostrado em tela;
+    -> Para mostrar a notificção em tela, usamos o useEffect com um array vazio como segundo parametro e usando a propria api do browser Notificatio,requestPermission(), apara assim dar permisão;
 
 #Dia - 05
 
