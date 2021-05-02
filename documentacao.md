@@ -71,6 +71,12 @@ Estartar o projeto:
     -> Para mostrar a notificção em tela, usamos o useEffect com um array vazio como segundo parametro e usando a propria api do browser Notificatio,requestPermission(), apara assim dar permisão;
 
 #Dia - 05
+    ->Dentro do proprio browser tem ferramenta uteis de armazenamento de dados como o local storage, mesmo que ele so armazene texto, mesmo dando um f5 para atualizar;
+    ->Temos tambem o session storage, mas o mesmo ao finalizar o navegador os dados sao perdidos, só fica salvo durante a mesma sessao;
+    ->Tambem se tem indexedB que funciona como um banco de dados no navegador;
+    -> E tambem temos o cookie que tambem armazena dados
+    ->Usando o next, por ser um intermediario entre em back e front, e como o local storage eh uma ferramenta so do browser o mais indicado eh usar os cookie;
+    -> adicionamos a biblioteca js-cookie
 
 #Tecnologias usadas:
 
@@ -79,3 +85,4 @@ Estartar o projeto:
 ->yarn;
 ->npm;
 ->typescript;
+->js-cookie;

@@ -37,6 +37,10 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
         Notification.requestPermission();
     }, [])
 
+    useEffect(() => {
+
+    },[level, currentExperience, challengesCompleted]);
+
     function levelUp() {
         setLevel(level + 1);
     }
