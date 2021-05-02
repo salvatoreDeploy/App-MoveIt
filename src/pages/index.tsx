@@ -8,7 +8,10 @@ import { CountdownContext, CountdownProvider } from '../contexts/CountdownContex
 import styles from '../styles/pages/Home.module.css';
 
 
-export default function Home() {
+export default function Home(props) {
+
+  /* console.log(props); */
+
   return (
     <div className = {styles.container}>
       <Head>
@@ -31,3 +34,22 @@ export default function Home() {
     </div>
   )
 }
+
+export const getServerSideProps = async () => {
+
+  const user = {
+    level: 1,
+    currentExperience: 50,
+    challengeCompleted: 2,
+  }
+
+  console.log(user);
+
+  return {
+    props: user
+  }
+}
+
+//Back end (Ruby) -> A interface eh alimentada com dados que vem dessa camada em terceiro lugar
+//Next.js (node.js) -> Ao acessar a aplicação ele atinge essa camada primeiro
+//front end (react) -> O next constroi a inteface atravez dessa camada em segundo lugar

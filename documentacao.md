@@ -77,6 +77,11 @@ Estartar o projeto:
     -> E tambem temos o cookie que tambem armazena dados
     ->Usando o next, por ser um intermediario entre em back e front, e como o local storage eh uma ferramenta so do browser o mais indicado eh usar os cookie;
     -> adicionamos a biblioteca js-cookie
+    ->Como muitas vezes usando typescript nao temos a tipagem certas podemos trazer isso de bibliotecas de terceiros a mais usada seria a definitelytyped;
+    ->yarn add @types/js-cookie -D;
+    -> Usando Next podemos acessar e utilizar caracteristicas back end;
+    ->Rodando o next de forma como back end podemos filtrar os dados que serao repassados ao front;
+    ->Construimos este metodo fora dos componentes na index, pois tudo que esta dentro dos componentes, sera renderizado pelo browser, assim ele nao vai aguarda trazer tais dados, fazendo fora e usando a funcionalidade async ele vai executar tudo antes repassar para os componentes e montar a interfaes com tais dados;
 
 #Tecnologias usadas:
 
