@@ -82,6 +82,12 @@ Estartar o projeto:
     -> Usando Next podemos acessar e utilizar caracteristicas back end;
     ->Rodando o next de forma como back end podemos filtrar os dados que serao repassados ao front;
     ->Construimos este metodo fora dos componentes na index, pois tudo que esta dentro dos componentes, sera renderizado pelo browser, assim ele nao vai aguarda trazer tais dados, fazendo fora e usando a funcionalidade async ele vai executar tudo antes repassar para os componentes e montar a interfaes com tais dados;
+    ->Importamos a funcionalidade do next GetServerSideProps, tipamos nossa constante com ela, assim damos um retorno no props com as propriedades que queremos;
+    ->Agora precisamos levar esses valores para o ChallengeProvider;
+    ->Criamos uma interface no index para as propriedades que estaremos capturando dos props, sendo homeprops, tipamos a props da home, e tambem trazemos a props concatenando as propriedades dentro do componente que esta envoltando a aplicação;
+    ->No return final tipamos e convertemos de numero para string;
+    ->No challengeContext trazemos essas prioridades para o challengeProvider, e utilizamos uma propriedade do js que dizemos que tirando o children todo resto estara armazenado numa variavel usando desta forma "...nomedavariavel";
+    ->Usando no useStates, podemos utilizar uma condição binaria;
 
 #Tecnologias usadas:
 
